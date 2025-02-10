@@ -434,8 +434,6 @@ $$</description>
 &lt;/div&gt;</description>
         </item>
         <item>
-<<<<<<< HEAD
-=======
         <title></title>
         <link>http://localhost:1313/p/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -511,7 +509,6 @@ linux中有三剑客之称：
 &lt;/div&gt;</description>
         </item>
         <item>
->>>>>>> 01d9983 (Initial commit)
         <title>Links</title>
         <link>http://localhost:1313/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

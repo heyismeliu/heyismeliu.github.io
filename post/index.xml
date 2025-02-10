@@ -425,8 +425,6 @@ $$</description>
 &lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
-<<<<<<< HEAD
-=======
         <item>
         <title></title>
         <link>http://localhost:1313/p/</link>
@@ -502,7 +500,6 @@ linux中有三剑客之称：
 &lt;/div&gt;
 &lt;/div&gt;</description>
         </item>
->>>>>>> 01d9983 (Initial commit)
         
     </channel>
 </rss>
