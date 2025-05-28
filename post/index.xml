@@ -24,8 +24,8 @@
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> yum install dnf
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>###卸载docker旧版本&lt;/p>
-&lt;p>在安装 Docker Engine 之前，您需要卸载任何冲突的软件包。&lt;/p>
+&lt;/div>&lt;h3 id="卸载docker旧版本">卸载docker旧版本
+&lt;/h3>&lt;p>在安装 Docker Engine 之前，您需要卸载任何冲突的软件包。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -50,10 +50,10 @@
 &lt;/div>
 &lt;/div>&lt;p>存储在其中的映像、容器、卷和网络不是 卸载 Docker 时自动删除。&lt;code>/var/lib/docker/&lt;/code>&lt;/p>
 &lt;h2 id="docker-engine安装">docker-engine安装
-&lt;/h2>&lt;p>###使用 rpm 存储库安装-在线方式&lt;/p>
-&lt;p>在新主机上首次安装 Docker Engine 之前，需要设置 Docker 存储库。之后，可以安装和更新 存储库中的 Docker。&lt;/p>
-&lt;p>####设置存储库&lt;/p>
-&lt;p>安装软件包（提供用于管理 您的 DNF 存储库）并设置存储库。&lt;code>dnf-plugins-core&lt;/code>&lt;/p>
+&lt;/h2>&lt;h3 id="使用-rpm-存储库安装-在线方式">使用 rpm 存储库安装-在线方式
+&lt;/h3>&lt;p>在新主机上首次安装 Docker Engine 之前，需要设置 Docker 存储库。之后，可以安装和更新 存储库中的 Docker。&lt;/p>
+&lt;h4 id="设置存储库">设置存储库
+&lt;/h4>&lt;p>安装软件包（提供用于管理 您的 DNF 存储库）并设置存储库。&lt;code>dnf-plugins-core&lt;/code>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -64,8 +64,8 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">sudo&lt;/span> &lt;span class="n">dnf&lt;/span> &lt;span class="n">config&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">manager&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">add&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">repo&lt;/span> &lt;span class="n">https&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="o">//&lt;/span>&lt;span class="n">download&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">com&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">linux&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">centos&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">ce&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">repo&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>###安装 Docker Engine&lt;/p>
-&lt;p>&lt;strong>1.要安装最新版本：&lt;/strong>&lt;/p>
+&lt;/div>&lt;h3 id="安装-docker-engine">安装 Docker Engine
+&lt;/h3>&lt;p>&lt;strong>1.要安装最新版本：&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -96,8 +96,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="从软件包安装-离线方式">从软件包安装-离线方式
-&lt;/h3>&lt;p>####软件包下载&lt;/p>
-&lt;p>转到https://download.docker.com/linux/centos/并选择CentOS 版本。然后浏览并下载要安装的 Docker 版本的文件。&lt;code>x86_64/stable/Packages/``.rpm&lt;/code>&lt;/p>
+&lt;/h3>&lt;h4 id="软件包下载">软件包下载
+&lt;/h4>&lt;p>转到https://download.docker.com/linux/centos/并选择CentOS 版本。然后浏览并下载要安装的 Docker 版本的文件。&lt;code>x86_64/stable/Packages/``.rpm&lt;/code>&lt;/p>
 &lt;p>安装 Docker Engine，将以下路径更改为您下载的路径 Docker 包。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -139,36 +139,10 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cp * /usr/bin
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">cp * /usr/bin
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>以下内容忽略：&lt;/p>
-&lt;hr>
-&lt;p>为 Docker 二进制文件创建软链接到 &lt;code>/usr/bin&lt;/code> 目录：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/docker /usr/bin/docker
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/dockerd /usr/bin/dockerd
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/docker-proxy /usr/bin/docker-proxy
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/docker-init /usr/bin/docker-init
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/ctr /usr/bin/ctr
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/runc /usr/bin/runc
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/containerd /usr/bin/containerd
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ln -s /usr/local/bin/containerd-shim-runc-v2 /usr/bin/containerd-shim-runc-v2
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;hr>
-&lt;p>将docker注册成系统服务。 执行“vim /etc/systemd/system/docker.service”命令，然后在文件中添加以下内容，退出并保存。&lt;/p>
+&lt;/div>&lt;p>将docker注册成系统服务。 执行“vim /etc/systemd/system/docker.service”命令，然后在文件中添加以下内容，退出并保存。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -224,8 +198,8 @@
 &lt;/span>&lt;span class="lnt">2
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">chmod&lt;/span> &lt;span class="o">+&lt;/span>&lt;span class="n">x&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">etc&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">systemd&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">system&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">docker&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">service&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">systemctl&lt;/span> &lt;span class="n">daemon&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">reload&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">chmod +x /etc/systemd/system/docker.service
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">systemctl daemon-reload
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>设置开机自启动&lt;/p>
@@ -234,7 +208,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl enable docker
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">systemctl &lt;span class="nb">enable&lt;/span> docker
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>启动docker&lt;/p>
@@ -243,7 +217,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">systemctl start docker
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">systemctl start docker
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>测试docker是否启动&lt;/p>
@@ -252,7 +226,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker ps
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">docker ps
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>如果打印出如下信息，则表示正确安装:&lt;/p>
@@ -261,7 +235,7 @@
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="docker修改国内源">docker修改国内源
@@ -276,13 +250,13 @@
 &lt;/span>&lt;span class="lnt">7
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">mkdir -p /etc/docker
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tee /etc/docker/daemon.json &amp;lt;&amp;lt; EOF
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://docker.1ms.run&amp;#34;,
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;#34;https://docker.xuanyuan.me&amp;#34; ]
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">EOF
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">mkdir -p /etc/docker
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">tee /etc/docker/daemon.json &lt;span class="s">&amp;lt;&amp;lt; EOF
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">{
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s"> &amp;#34;registry-mirrors&amp;#34;: [&amp;#34;https://docker.1ms.run&amp;#34;,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s"> &amp;#34;https://docker.xuanyuan.me&amp;#34; ]
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s"> }
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">EOF&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>重载systemctl 文件&lt;/p>
@@ -335,7 +309,7 @@
 &lt;/span>&lt;span class="lnt">3
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">docker-compose --version
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">docker-compose --version
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Docker Compose version v2.33.0
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
